@@ -15,7 +15,7 @@ html,body{
     width:750px ;
     background-color: #efefef;
     box-shadow:0px 0px 15px rgba(0,0,0,0.15);
-    border: solid 2px black;
+    border: solid 7px black;
     overflow: hidden;
 }
 .wrapper .images{
@@ -27,20 +27,15 @@ html,body{
 .wrapper .images .img-1{
     height:100% ;
     width:100%;
-    background-image: url(/doctor-strange.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: url("doctor-strange.jpg") no-repeat;
+    
 }
 .wrapper .images .img-2{
     position: absolute;
-    height:100%;
-    width:100%;
+    height:100;
+    width:50%;
     filter: grayscale(1);
-    background-image: url(/doctor-strange.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background:url("doctor-strange.jpg") no-repeat;
 }
 .wrapper .slider {
 position: absolute;
@@ -53,13 +48,15 @@ z-index: 99;
     width: 100%;
     outline: none;
     background:none ;
+    -webkit-appearance: none;
     appearance: none;
 }
 
 .slider input::-webkit-slider-thumb{
     height: 486px;
     width: 3px;
-    background-color: red;
+    background-color: none;
+    -webkit-appearance: none;
     appearance: none;
     cursor: col-resize;
 }
