@@ -8,13 +8,15 @@
     <title>section-6-user experience</title>
   </head>
   <body>
-    <div class="image-slider">
-      <div class="image-container">
-        <img src="scouts-before.jpg" alt="before" />
+    <div class="container">
+      <div class="inner-containers under">
+        <img src="scouts-before.jpg" width="300" height="300" alt="before" />
       </div>
-      <img src="scouts-after.jpg" alt="after" />
-      <input class="range-selector" type="range" />
+      <div class="inner-containers overlay">
+        <img src="scouts-fire-breathing-dragon.jpg" width="300" height="300" alt="after" />
+        <input class="range-selector" type="range" />
+      </div>
     </div>
-    <script src="slider.js" defer></script>
+    <script src="image-comparison.js" defer></script>
   </body>
 </html>

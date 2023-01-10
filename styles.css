@@ -1,7 +1,9 @@
 html {
+  /* set the html height to 100% of the page */
   height: 100%;
 }
 body {
+  /* creating the radial gradient in the background and setting the body height to 100% */
   height: 100%;
   /* Created with https://www.css-gradient.com */
   background: #010101;
@@ -13,37 +15,42 @@ body {
   background-position: center;
 }
 
-.image-container {
-  width: 100vw;
+.container {
+display: flex;
+justify-content: center;
+}
+.inner-containers{
+  position:absolute;
+  width: auto;
   height: auto;
-}
-
-.image-slider {
-  position: relative;
-  display: inline-block;
-}
-
-.image-slider > div {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
   overflow: hidden;
 }
 
-.image-slider img {
-  display: block;
-  user-select: none;
+.inner-containers img {
+display: block;
+vertical-align: middle;
+
 }
-.image-slider input {
+
+
+
+/* control the location of the range slider puts it at the bottom of the image inside the image container */
+.container input {
   position: absolute;
-  left: 0;
+  left: 45%;
+  z-index: 9;
   bottom: 10px;
   width: 100%;
   margin: 0;
+  cursor: ew-resize;
+  height: 40px;
+  width: 40px;
+  background-color: #7e7e7e;
+  color: silver;
+  opacity: 0.7;
+  border-radius: 50%;
 }
-input .range-slector {
+/* input .range-slector {
   margin-left: 5px;
   margin-right: 5px;
-}
+} */
